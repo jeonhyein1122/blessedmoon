@@ -24,21 +24,21 @@ ul li a{
     font-size: 14px;
 }
 
-em.pink{
+ul li em.pink{
     color: deeppink;
     font-size: 11px;
     font-style: normal;
 }
-span.gray{
+ul li div span.gray{
     color: #777777;
     font-size: 12px;
 }
-span.sale{
+ul li div span.sale{
     text-decoration: line-through;
     font-size: 13px;
     color: #cccccc;
 }
-.ts{
+ul li a strong.ts{
     width: 210px;
     text-overflow: ellipsis;
     white-space: nowrap;
