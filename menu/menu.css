@@ -1,0 +1,20 @@
+*{margin: 0px; padding: 0px;}
+
+body{
+    padding: 2px;
+}
+
+div ul{
+    margin-top: 2em;
+}
+
+div ul li{
+    display: inline;
+    font-size: 12px;
+    color: #aaaaaa;
+    padding: 2px;
+}
+
+div ul li:hover{
+    color: black;
+}
