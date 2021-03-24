@@ -24,10 +24,8 @@ ul li a{
     font-size: 14px;
 }
 
-.pink{
-    color: deeppink;
-}
 em.pink{
+    color: deeppink;
     font-size: 11px;
     font-style: normal;
 }
@@ -41,7 +39,7 @@ span.sale{
     color: #cccccc;
 }
 .ts{
-    width: 230px;
+    width: 210px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
