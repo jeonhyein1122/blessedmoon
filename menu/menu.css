@@ -1,8 +1,9 @@
 *{margin: 0px; padding: 0px;}
 
-body{
+body.page{
     padding: 10px;
 }
+
 
 div.menu ul.men{
     margin-top: 2em;
@@ -18,5 +19,6 @@ div.menu ul.men li.btn{
 div.menu ul.men li.btn:hover{
     color: black;
 }
+
 #page{width: 1492px; margin: 0 auto;}
 

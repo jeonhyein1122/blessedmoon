@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body{padding: 10px;}
+
+
+ul li a{
+    width: 300px; height: 300px;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1em;
+    font-size: 7px;
+
+}
+
+ul li div#img{
+    width: 100px;
+    height: 100px;
+}
+
+ul li em.pink{
+    color: deeppink;
+    font-size: 5px;
+    font-style: normal;
+}
+ul li div span.gray{
+    color: #777777;
+    font-size: 6px;
+}
+ul li div span.sale{
+    text-decoration: line-through;
+    font-size: 6px;
+    color: #cccccc;
+}
+ul li a strong.ts{
+    width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
