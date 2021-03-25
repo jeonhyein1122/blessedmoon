@@ -1,0 +1,30 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body{padding: 10px;}
+
+div.main{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+div.menu ul.men{
+    width: 100%;
+    margin-top: 50px;
+    display: inline;
+}
+div.menu ul.men li.btn{
+    color: #aaaaaa;
+    display: inline;
+    font-size: 10px;
+    padding: 3px;
+}
+div.menu ul.men li.btn:hover{color: black;}
+
+body#page div#aa{
+    display: inline;
+    width: 600px;
+    height: 300px;
+}
