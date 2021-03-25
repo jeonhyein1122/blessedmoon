@@ -1,0 +1,80 @@
+*{margin: 0px; padding: 0px;}
+
+body.page{
+    padding: 10px;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+div ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    line-height: 1.5em;
+    list-style: none;
+}
+div#main2{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    word-break: break-all;
+    white-space: nowrap;
+    word-wrap: normal;
+    display: inline block;
+    position: relative;
+    max-width: 160px;
+
+}
+
+div button{
+    appearance: auto;
+    text-rendering: auto;
+    color: -internal-light-dark(black,white);
+    letter-spacing:normal;
+    text-transform: none;
+    text-shadow: none;
+    text-indent: 0px;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font: 400 13.3333px Arial;
+     display: inline-block;
+    position: relative;
+    outline: none;
+    line-height: none;
+    vertical-align: top;
+}
+
+div button span.blind{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+
+div.menu ul.men{
+    margin-top: 2em;
+}
+
+div.menu ul.men li.btn{
+    display: inline;
+    font-size: 12px;
+    color: #aaaaaa;
+    padding: 2px;
+}
+
+div.menu ul.men li.btn:hover{
+    color: black;
+}
+
+#page{width: 1492px; margin: 0 auto;}
