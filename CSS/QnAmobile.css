@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 묻고 답하기 전체 */
+div.top_menu{
+    display: block;
+    display: table;
+}
+
+/* 묻고 답하기 */
+.strong{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+/* 레이블 전체*/
+div.right_menu{
+    display: inline-flex;
+}
+
+/* 내 qna보기 체크박스 */
+.lable{
+    display: inline-block;
+    margin: 10px 20px;
+    padding-top: 8px;
+    vertical-align: top;
+}
+
+/* 제목/상품 상품이름 선택시 */
+#a_title:hover{
+    text-decoration-line: underline;
+    color: #ea699d;
+}
+
+#a_title{
+    font-size: 13px;
+    text-decoration: none;
+    color: #ea699d;
+}
+
+/* 답변상태 버튼 */
+#btn{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* 테이블 */
+#table{
+    width: 100%;
+    border-top: 2px solid black;
+    /* margin-top: 1rem; */
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+#sub{
+    width:20rem;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    font-size: 14px;
+}
+img{
+    display: none;
+}
+
+#th01{
+    display: none;
+}
+tr td:first-child{
+    display: none;
+}
+
+#sub:hover{
+    text-decoration-line: underline;
+}
+
+#sub2{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <!-- CSS 라이브러리 : Bootstrap -->
+    <!-- 1. 다운로드 방식 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- 2. CDN방식 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+    <!-- /* 태블릿/데스크탑 */ -->
+    <!-- 680이상 -->
+    <link rel="stylesheet" href="./CSS/QnA.css" media="(min-width:680px)">
+
+    <!-- /* 모바일 */ -->
+    <!-- 680이하 -->
+    <link rel="stylesheet" href="./CSS/QnAmobile.css" media="(max-width:680px)">
+    
+    <link rel="stylesheet" href="./list.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <script src="./JS/QnA.js"></script>
+    <!-- 상단 제목 -->
+
+    <div class="top_menu">
+        <div class="strong"> <strong>묻고 답하기</strong> </div>
+        <div class="right_menu">
+            <div>
+                <label for="input" class="lable">
+                    <span>내 Q&A만 보기</span>
+                    <input type="checkbox" id="input">
+                </label>
+            </div>
+            <div>
+                <button class="btn btn-outline-secondary" id="btn">답변 상태</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 묻고 답하기 다음 밑에 게시판 -->
+    <div class="nav">
+        <table class="table" id="table">
+            <tr>
+                <th id="th01">답변상태</th>
+                <th>제목/상품</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+
+            <!-- 테이블 데이터들  -->
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/15370373102642228_1188670735.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5006093636" id="a_title">블레스문 라이크 어 섀도우 3종세트</a>
+                        <div id="sub" onclick="list()"> <a href="./list.html" id="sub2"> 안녕하세요~ 섀도우 3종 세트 구매하려고 하는데 그냥 펄 얹는 용으로 추가로 사용하는 게 좋을까요 아니면 단독으로만 사용해도 예쁜가요?</a></div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">as46****</td>
+                <td style="padding-top: 30px;">2021.03.14.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/15370373102642228_1188670735.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5006093636" id="a_title">블레스문 라이크 어 섀도우 3종세트</a>
+                        <div id="sub">상품깨져서왔는데 톡톡 확인해주세요</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">ksy9****</td>
+                <td style="padding-top: 30px;">2021.03.13.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/16908058013971767_1677195796.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #아이킷 [비타민 아이크림]</a>
+                        <div id="sub">제품은 좋아보이는데 쓰레기가 너무 많이 나오는 구성같습니다. 요즘 환경을 생각하면 좋은 제품을 큰 용기에 파는 것도 좋을 것 같은데 혹시 그럴 계획은 없으신지, 아니면 다름 옵션이 없나요?</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">shar****</td>
+                <td style="padding-top: 30px;">2021.03.11.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/30754742132972785_501141844.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #워터킷 [비타민 수분크림]</a>
+                        <div id="sub">한상자에 몇개들어있나요?</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">kiku****</td>
+                <td style="padding-top: 30px;">2021.03.09.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/16908058013971767_1677195796.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #아이킷 [비타민 아이크림]</a>
+                        <div id="sub">아이킷과 워터킷 2개다 사용 할때는 어떻게 사용을 하고 효과가 더 좋은지 궁금합니다 아니면 아이킷 한가지만 사용해도 워터킷의 기능을 같이 할까요?</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">eden****</td>
+                <td style="padding-top: 30px;">2021.03.09.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/16908058013971767_1677195796.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #아이킷 [비타민 아이크림]</a>
+                        <div id="sub">유통기한이 어떻게 되나요?</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">g777****	</td>
+                <td style="padding-top: 30px;">2021.03.07.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/15370373102642228_1188670735.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 라이크 어 섀도우 3종세트</a>
+                        <div id="sub" onclick="lock()">비밀글입니다.</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">yuns****</td>
+                <td style="padding-top: 30px;">2021.02.10.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/35792624696646729_588124547 (1).jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">[완판신화 1+1] 라이크 어 섀도우</a>
+                        <div id="sub">1+1 두개샀는데 왜 하나만왔죠? 나머지 보내주세요</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">jyp4****	</td>
+                <td style="padding-top: 30px;">2021.02.09.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/30754742132972785_501141844.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #아이킷 [비타민 아이크림]</a>
+                        <div id="sub">언제 배송되는건가요??</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">rndm****</td>
+                <td style="padding-top: 30px;">2021.02.06.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/15370373102642228_1188670735.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5006093636" id="a_title">블레스문 라이크 어 섀도우 3종세트</a>
+                        <div id="sub" onclick="lock()">비밀글입니다.</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">audg****</td>
+                <td style="padding-top: 30px;">2021.02.03.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/30754742132972785_501141844.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #아이킷 [비타민 아이크림]</a>
+                        <div id="sub">고민 많이하고.. 구매해봅니다.. 포장 잘 부탁드려요...</div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">rndm****</td>
+                <td style="padding-top: 30px;">2021.02.02.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/30754742132972785_501141844.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #아이킷 [비타민 아이크림]</a>
+                        <div id="sub" onclick="lock()">비밀글입니다. </div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">wwjr****</td>
+                <td style="padding-top: 30px;">2021.01.22.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/28452927955761423_1386267509.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 블레스문 킷 #로코블리</a>
+                        <div id="sub" onclick="lock()">비밀글입니다. </div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">baku****</td>
+                <td style="padding-top: 30px;">2020.12.28.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/30754742132972785_501141844.jpg">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 비타킷 #워터킷 [비타민 수분크림]</a>
+                        <div id="sub" onclick="lock()">비밀글입니다. </div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">virt****</td>
+                <td style="padding-top: 30px;">2020.11.12.</td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 30px;">답변완료</td>
+                <td id="content">
+                    <img src="./Img/3856839206314579_318636259.png">  
+                    <div id="answer">
+                        <a href="https://smartstore.naver.com/blessedmoon_cosmetics/products/5405995939" id="a_title">블레스문 라이크 어 섀도우 #모던타임즈</a>
+                        <div id="sub" onclick="lock()">비밀글입니다. </div>
+                    </div>
+                </td>
+                <td style="padding-top: 30px;">fptn****</td>
+                <td style="padding-top: 30px;">2020.10.18.</td>
+            </tr>
+
+
+            
+            
+        </table>
+    </div>
+
+    <!-- 페이지 번호  -->
+    <nav aria-label="...">
+        <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+    </nav>
+
+    <!-- 검색창 -->
+    <div style="text-align: center;" id="ser">
+        <input type='text'>
+        <button type="button" class="btn btn-outline-primary"> <a href="#"></a> 검색</button>
+
+    </div>
+
+
+</body>
+</html>
