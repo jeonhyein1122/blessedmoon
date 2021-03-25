@@ -1,0 +1,22 @@
+.article{width: 1280px; margin: 0 auto; position: relative;}        
+.section{margin-top: 50px;} 
+
+.posi{display: block;  margin-bottom: 10px;}
+strong{ line-height: 18px;font-size: 16px; display: inline-block; }
+.strong{display: inline-block; padding-right: 1114px;}
+.strong span{color: #ea699d; margin-left: 4px; font-size: 16px; }
+a{color: black; text-decoration: none; display: inline; font-size: 12px;}
+a:hover{color: black;}
+
+.box{padding: 25px 0 27px; border-top: 2px solid black; border-bottom: 1px solid#e2e5e9;}
+.nom{size: 18px; font-weight: 600;}
+.nom :first-child{color: #ea699d; }
+
+.day{margin-top: 8px; font-size: 13px; line-height: 18px; color: #888888; }
+.number{margin-left: 14px;}
+
+.content {padding: 50px 0 70px;  line-height: 1.5em; color: #444444; width: 1000px;}
+.content p{font-size: 13px;  padding-left: 200px; height: 5px;}
+.content #p1 span{font-weight: 500px;}
+.content #p2{line-height: 1.8; word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; height: 5px;}
+.content #p2 span{ font-size: 13px; }
