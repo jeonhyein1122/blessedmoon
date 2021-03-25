@@ -1,0 +1,86 @@
+*{margin: 0px; padding: 0px;}
+
+body{
+    /* background-color: #FFFFFF; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 제목줄 영역*/
+header{ background-color: #FF9DC5;}
+
+header div#h1 div#t1{height: 37px; padding-left: 200px; padding-top: 15px; }
+header div#h1 div#t1 a{text-decoration: none; color: #FFFFFF; font-size: medium; font-weight: bold; margin: 13px;}
+
+header div#h1 div#t2{height: 37px;}
+
+
+
+
+
+header div#h2{height: 62px; padding-left: 200px;}
+header div#h2 a{text-decoration: none; color: #FFFFFF; font-weight: bold;}
+header div#h2 img{ border-radius:42px}
+
+
+
+/* header div#h2 p{text-decoration: none; color: #FFFFFF;} */
+
+
+/* nav 메뉴 */
+nav{
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #EAEAEA;
+
+}
+
+nav ul{
+    list-style: none;
+    /* border-top: 1px solid red;
+    border-bottom: 1px solid red; */
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    letter-spacing: .3em;
+    margin-left: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    line-height: 3em;
+}
+
+nav ul li a:hover{text-decoration: underline;}
+
+
+/* 
+body div#itemtop{ background-color: aqua;}
+body div#itemtop ul{ max-width:296px; list-style:none; padding: 10px;}
+body div#itemtop ul li{  background-color: crimson; float: left;}
+body div#itemtop ul li img{ width:100%} */
+
+body div.product{
+    width: 1000px;
+    float: left;
+}
+
+
+
+
+
+
+/* footer 영역 */
+footer{
+    height: 500px;
+    clear: both;
+    color: black;
+    text-align: center;
+    padding: 1em 0px;
+}

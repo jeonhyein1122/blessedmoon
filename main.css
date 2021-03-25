@@ -1,0 +1,6 @@
+body.bodycss,html{height: 100%;}
+div.content{margin: 0px 200px;}
+div.product{ width: 328px; height: 403px; margin: 20px; padding: 0px 16px; float: left;}
+div.product p{font-size: x-large; font-weight: bold; }
+div.product a.product_text{text-decoration: none; color: #000000}
+div.product a a p.productbt{font-size:small; color: #999999;}
