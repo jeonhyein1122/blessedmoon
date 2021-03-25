@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+div.main{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+div.menu ul.men{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+div.menu ul.men li.btn{
+    color: #aaaaaa;
+    font-size: 10px;
+    padding: 3px;
+}
+div.menu ul.men li.btn:hover{color: black;}
+
+body.page div#aa{
+    width: 300px;
+    height: 300px;
+}
