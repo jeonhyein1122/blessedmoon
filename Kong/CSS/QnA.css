@@ -5,7 +5,7 @@
 
 body{
     margin: 0 80px;
-    height: 70px;
+    height: 150px;
 }
 
 /* 묻고 답하기 전체 */
@@ -111,8 +111,8 @@ td{
 
 #map{
     float: right;
-    border: 1px solid red;
-    width: 30%; height: 250px;
+    /* border: 1px solid red; */
+    /* width: 30%; height: 250px; */
     margin-bottom: 10%;
 }
 
