@@ -86,3 +86,7 @@ tr td:first-child{
     text-decoration: none;
     color: black;
 }
+ul{
+    list-style: none;
+    padding-left: 0px;
+}

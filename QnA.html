@@ -46,9 +46,32 @@
                     <input type="checkbox" id="input">
                 </label>
             </div>
-            <div>
-                <button class="btn btn-outline-secondary" id="btn">답변 상태</button>
+            <!-- 버튼 시작 -->
+            <div class="box">
+
+                <div class="allbox" id="allbox" onclick="allbox('list', allbox)">
+                    <button class="btn btn-outline-secondary" id="btn">답변 상태
+                        <span class="span"></span>
+                    </button>
+                </div>
+
+                <ul class="list" id="list" style="display: none;">
+
+                    <li id="first">
+                        <button class="one btn btn-outline-secondary" onclick="btn()">답변 상태</button>
+                    </li>
+
+                    <li>
+                        <button class="two btn btn-outline-secondary">미답변</button>
+                    </li>
+
+                    <li>
+                        <button class="thrre btn btn-outline-secondary">답변 완료</button>
+                    </li>
+                </ul>
+
             </div>
+            <!-- 버튼 끗 -->
         </div>
     </div>
 
@@ -257,9 +280,6 @@
                 <td style="padding-top: 30px;">fptn****</td>
                 <td style="padding-top: 30px;">2020.10.18.</td>
             </tr>
-
-
-            
             
         </table>
     </div>
@@ -280,7 +300,6 @@
     </div>
 
     <div id="map"></div>
-
 
 </body>
 </html>

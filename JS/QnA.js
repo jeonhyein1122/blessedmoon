@@ -15,6 +15,16 @@ function list(){
     });
 }
 
+// 버튼 이벤트
+function allbox(id, id2){
+    var n= document.getElementById(id);
+    if(n.style.display != 'none'){
+        n.style.display = 'none';
+    }else{
+        n.style.display = '';
+    }
+}
+
 function showMap(){
 
     // 지도가 보여질 요소 찾아오ㅓ기
