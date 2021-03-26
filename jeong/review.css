@@ -25,3 +25,7 @@ td a p:hover{color: black; text-decoration: underline;}
 td a:hover{color: black;}
 td a div{border: 1px solid black; width: 70px; margin-left: 20px; }
 
+.number{width: 34px; height: 34px; background-color: #ff9dc5; line-height: 1.5em; display: block; margin: auto; }
+.number a{ color: white;  padding-left: 12px; line-height: 34px;}
+.number a:link{text-decoration: none;}
+

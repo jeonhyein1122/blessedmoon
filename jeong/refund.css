@@ -15,7 +15,7 @@ a:hover{color: black;}
 .day{margin-top: 8px; font-size: 13px; line-height: 18px; color: #888888; }
 .number{margin-left: 14px;}
 
-.content {padding: 50px 0 70px;  line-height: 1.5em; color: #444444; width: 1000px;}
+.content {padding: 50px 0 70px;  line-height: 1.5em; color: #444444; width: 100vw; }
 .content p{font-size: 13px;  padding-left: 200px; height: 5px;}
 .content #p1 span{font-weight: 500px;}
 .content #p2{line-height: 1.8; word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; height: 5px;}
