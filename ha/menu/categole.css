@@ -1,0 +1,34 @@
+body{
+    width: 800px; margin: 0 auto;
+    padding: 20px;
+}
+
+
+#page{
+    text-align: right;
+    
+}
+
+#page p button{
+    background-color: chartreuse;
+    border-color: white;
+    margin-right: 10px;
+}
+
+#page p button a.n{
+    color: white;
+    text-decoration: none;
+}
+
+#page p a.home{
+    text-decoration: none;
+    color: #cccccc;
+}
+
+div#smaimg ul.imgs{
+    list-style: none;
+    display: inline;
+}
+
+
+

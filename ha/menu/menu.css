@@ -4,9 +4,10 @@ a{text-decoration: none;}
 
 body{padding: 10px;}
 
-
-
-
+#page div.main{
+    margin-top: 50px;
+    margin-left: 50px;
+}
 div.menu ul.men{
     margin-top: 2em;
 }
@@ -16,7 +17,10 @@ div.menu ul.men li.btn{
     font-size: 12px;
     color: #aaaaaa;
     padding: 2px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
+
 
 div.menu ul.men li.btn:hover{
     color: black;
