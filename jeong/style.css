@@ -37,7 +37,7 @@ table{
     text-align: center;
     margin-top: 10px;
     margin-left: auto; margin-right: auto;
-    width: 1280px; height: 167px;
+    width: 100%; height: 167px;
     font-size: 13px;}
 table tr{border-bottom: 1px dotted gray; height: 50px;}
 table th#th1{ width: 150px; text-align: center;}

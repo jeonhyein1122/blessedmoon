@@ -1,0 +1,24 @@
+.strong{margin-left: 10px;}
+.box{padding-left: 270px;}   
+
+table{ margin-left: 20px; width: 77%; height: 167px;}
+
+table th#th1{ width: 90px; text-align: center;}
+table th#th2{ width: auto; text-align: center;}
+table th#th3{ display: none;}
+table th#th4{ display: none;}
+
+/* tr td:nth-child(3){display: none;}
+tr td:last-child{display: none;} */
+        
+.number{ margin-left: 245px; }
+
+.btn-group input{margin-left: 100px;}
+
+       
+        
+
+
+
+  
+
