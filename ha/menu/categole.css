@@ -9,18 +9,18 @@ body{
     
 }
 
-#page p button{
+#page div button{
     background-color: chartreuse;
     border-color: white;
     margin-right: 10px;
 }
 
-#page p button a.n{
+#page div button a.n{
     color: white;
     text-decoration: none;
 }
 
-#page p a.home{
+#page div a.home{
     text-decoration: none;
     color: #cccccc;
 }
@@ -28,6 +28,11 @@ body{
 div#smaimg ul.imgs{
     list-style: none;
     display: inline;
+}
+div#smaimg ul.imgs li img{
+    padding: 1px;
+    float:left;
+    
 }
 
 
