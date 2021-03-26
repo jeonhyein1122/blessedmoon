@@ -1,86 +1,25 @@
-*{margin: 0px; padding: 0px;}
+#body,html{width: 100%; height: 100%; background-color: red;}
+header{width: 100; height: 99px; background-color: orange;}
 
-body{
-    /* background-color: #FFFFFF; */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+#header{margin: 0px 34px; background-color: teal;}
+header #h1{width: 100; height: 37px; background-color: black;}
+header #h1_1{ width: 150px; height: 37px; background-color: thistle; float: left; padding: 5px;}
+header #h1_1 a{text-decoration: none; color: #FFFFFF; }
+header #h1_2{ width: 150px; height: 37px; background-color: thistle; float: right;} 
 
-/* 제목줄 영역*/
-header{ background-color: #FF9DC5;}
+header #h2{width: 100; height: 62px; background-color: white;}
+header #h2_1{ width: 500px; height: 42px; background-color: tomato; float: left; margin-top: 10px;}
+header #h2_1 img{ width: 42px; height: 42px; border-radius:42px}
+header #h2_1 a{color: #FFFFFF; font-weight: bold;}
+header #h2_2{ width: 130px; height: 34px; background-color: tomato; float: right; margin-top: 15px;} 
 
-header div#h1 div#t1{height: 37px; padding-left: 200px; padding-top: 15px; }
-header div#h1 div#t1 a{text-decoration: none; color: #FFFFFF; font-size: medium; font-weight: bold; margin: 13px;}
+div#profile{width: 100; height: 150px; margin: 0px 34px; padding: 36px 0px; background-color: violet;}
 
-header div#h1 div#t2{height: 37px;}
-
-
-
-
-
-header div#h2{height: 62px; padding-left: 200px;}
-header div#h2 a{text-decoration: none; color: #FFFFFF; font-weight: bold;}
-header div#h2 img{ border-radius:42px}
+nav{width: 100; height: 72px; background-color: yellowgreen; padding: 20px 0px; border: 1px solid #EAEAEA;}
+nav ul{list-style: none; text-align: center; background-color: rebeccapurple;}
+nav ul li{ display: inline; letter-spacing: .3em; margin-left: 2em; background-color: purple;}
+nav ul li a{text-decoration: underline;}
 
 
+footer{width: 100; height: 20%; background-color: blue;}
 
-/* header div#h2 p{text-decoration: none; color: #FFFFFF;} */
-
-
-/* nav 메뉴 */
-nav{
-    margin-top: 10px;
-    /* margin-bottom: 20px; */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #EAEAEA;
-
-}
-
-nav ul{
-    list-style: none;
-    /* border-top: 1px solid red;
-    border-bottom: 1px solid red; */
-    text-align: center;
-}
-
-nav ul li{
-    display: inline;
-    letter-spacing: .3em;
-    margin-left: 2em;
-}
-
-nav ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    line-height: 3em;
-}
-
-nav ul li a:hover{text-decoration: underline;}
-
-
-/* 
-body div#itemtop{ background-color: aqua;}
-body div#itemtop ul{ max-width:296px; list-style:none; padding: 10px;}
-body div#itemtop ul li{  background-color: crimson; float: left;}
-body div#itemtop ul li img{ width:100%} */
-
-body div.product{
-    width: 1000px;
-    float: left;
-}
-
-
-
-
-
-
-/* footer 영역 */
-footer{
-    height: 500px;
-    clear: both;
-    color: black;
-    text-align: center;
-    padding: 1em 0px;
-}

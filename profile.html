@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,html{width: 100%;}
+
+            #wrap{
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                border: 1px solid black;
+
+            }
+
+            #wrap div{
+                width: 100%;
+                height: 700px; 
+                display: inline-block;
+                /* inline-block특성은 기본적으로 좌우여백을 가짐(4~6px) */
+                margin-right: -6px;
+                padding-top: 30px;
+
+                /* border: 1px solid red; */
+                
+            }
+
+            #wrap div:first-child{ width: 300px; padding-left: 50px;}
+            #wrap div:nth-child(2){width: 300px; height: 500px;}
+            #wrap div:nth-child(3){ width: 300px;height: 500px;}
+            #wrap div:nth-child(4){ width: 300px;height: 500px;}
+            #wrap div:last-child{width: 300px;height: 500px;}
+
+
+            #wrap div .profile{width: ;}
+
+            /* 반응형 웹을 위한 미디어쿼리 적용 */
+            /*320px이상 : smart phone- potrait 모드*/
+            @media all and (min-width:320px){
+                #wrap div{width: 100%;}
+            }
+
+            /* 600px이상 : smart phone-landscape  or  tablet */
+            @media all and (min-width: 600px){
+                #wrap div{width: 50%;}
+                #wrap div:last-child{width: 100%;}
+            }
+
+            /* 800px이상 : desktop monitor */
+            @media all and (min-width: 800px){
+                #wrap div{width: 20%;}
+                #wrap div:last-child{width: 20%;}
+            }
+
+.profile{width: 20%; height: 500px; margin: 20px; border: 1px solid cadetblue}
+
+</style>
+<body id="myPage">
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="./index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity" style="padding: 50px;">
+  <img src="./image/PC3.jpg" alt="boat">
+ 
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>팀장 및 팀원 소개</p>
+
+<div class="w3-row"><br>
+
+  <div id="wrap">
+
+    <!-- 팀장 -->
+    <div>
+      
+
+      <img src="./image/28359723687473854_64751053.jpg" class="profile">
+        <h3>Johnny Walker</h3>
+        <p>Web Designer</p>
+        <div id="map"></div>
+  
+        
+  
+    </div>
+
+
+    <!-- 팀원 -->
+    <div>
+      
+
+      <img src="./image/28359723687473854_64751053.jpg" class="profile">
+        <h3>Johnny Walker</h3>
+        <p>Web Designer</p>
+        <div id="map"></div>
+  
+        
+  
+    </div>
+
+
+    <!-- 팀원 -->
+    <div>
+      
+
+      <img src="./image/28359723687473854_64751053.jpg" class="profile">
+        <h3>Johnny Walker</h3>
+        <p>Web Designer</p>
+        <div id="map"></div>
+  
+        
+  
+    </div>
+
+
+  <!-- 팀원 -->
+  <div>
+      
+
+    <img src="./image/28359723687473854_64751053.jpg" class="profile">
+    <h3>Johnny Walker</h3>
+      <p>Web Designer</p>
+
+      <div id="map"></div>
+      
+
+  </div>
+
+
+    <!-- 팀원 -->
+    <div>
+      
+
+      <img src="./image/28359723687473854_64751053.jpg" class="profile">
+        <h3>Johnny Walker</h3>
+        <p>Web Designer</p>
+  
+        <div id="maplim"></div>
+
+        <!-- 카카오 지도 JS SDK를 적용 및 앱키발급 -->
+        <!-- 카카오 지도는 웹서버(ip주소있는 : dothome같은 곳)에서 실행해야만 함 -->
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66f98a4effed2a4899ada4590c712487"></script>
+
+        <!-- 실제 지도를 띄우는 코드작성 -->
+        <script>
+            
+            var container = document.getElementById('maplim'); //지도를 담을 영역의 DOM 레퍼런스
+            var options = { //지도를 생성할 때 필요한 기본 옵션
+                center: new kakao.maps.LatLng(37.537085, 127.085911), // 지도의 중심좌표
+                level: 3 //지도의 레벨(확대, 축소 정도)
+            };
+
+            var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(37.537085, 127.085911); 
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+        </script>
+  
+        
+  
+    </div>
+</div>
+
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
