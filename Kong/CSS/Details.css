@@ -1,0 +1,9 @@
+/* 이미지 */
+#carouselExampleInterval{
+    width: 700px; height: 350px;
+    margin-left: 45%;
+}
+
+button{
+    margin-top: 50%;
+}
