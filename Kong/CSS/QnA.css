@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0 80px;
+    height: 150px;
+}
+
+/* 묻고 답하기 전체 */
+div.top_menu{
+    display: block;
+    display: table;
+}
+
+/* 묻고 답하기 */
+.strong{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* 레이블 전체*/
+div.right_menu{
+    float: right;
+    display: inline-flex;
+}
+
+/* 내 qna보기 체크박스 */
+.lable{
+    display: inline-block;
+    margin: 10px 20px;
+    padding-top: 8px;
+    vertical-align: top;
+}
+
+/* 답변상태 버튼 */
+#btn{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* 테이블 */
+#table{
+    width: 100%;
+    border-top: 2px solid black;
+    /* margin-top: 1rem; */
+    text-align: center;
+}
+
+th{
+    /* margin-top: 16px; */
+    /* margin-bottom: 16px; */
+    font-size: 15px;
+}
+
+/* 테이블 데이터들 */
+td{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
+/* 제목 상품 데이터만 왼쪽으로 */
+#content{
+    text-align: left;
+}
+
+#content img{
+    margin: 10px;
+    width: 60px; height: 60px;
+}
+
+/* 제목/상품 상품이름 선택시 */
+#a_title:hover{
+    text-decoration-line: underline;
+    color: #ea699d;
+}
+
+#a_title{
+    font-size: 13px;
+    text-decoration: none;
+    color: #ea699d;
+}
+
+/* 답변내용 */
+#sub{
+    width:51rem;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    font-size: 14px;
+}
+
+#sub2{
+    text-decoration: none;
+    color: black;
+}
+
+/* 상품명/답변 div */
+#answer{
+    margin-left: 8px;
+    display: inline-block;
+}
+
+#sub:hover{
+    text-decoration-line: underline;
+}
+
+#map{
+    float: right;
+    /* border: 1px solid red; */
+    /* width: 30%; height: 250px; */
+    margin-bottom: 10%;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* 버튼의 스타일 */
+.box{ 
+    position: relative;
+    display:  inline-block;
+    /* vertical-align: top; */
+    /* padding-left:1050px ; */
+    border-color: white;
+}
+.allbox{
+    border: 1px solid white;
+    width: 117px;
+}
+.all{
+    padding: 0 23px 0 15px;
+    font-size: 13px;
+    line-height: 34px;
+    text-align: left;
+    border:none;
+    background-color: white;
+}
+/* 화살표 */
+/* .span{
+    top: 14px;
+    right: 16px;
+    position: absolute;
+    width: 10px; height: 5px;
+    display: block;
+    border: solid black;
+    border-width: 5px 5px 0 5px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+} */
+
+.list{
+    list-style: none;
+    padding: 0 20px 0 0 ;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+.list button{
+    background-color: white;
+    border: 1px solid black;
+    text-align: left;
+    width: 115px;
+    padding: 0 10px;
+    line-height: 35px;
+    white-space: nowrap;
+    word-wrap: break-word;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
