@@ -1,0 +1,10 @@
+.article{width: 1280px; margin: 0 auto; position: relative;}    
+.section{margin-top: 50px;}
+
+.strong{vertical-align: top; width: 110px; height: 25px; margin-top: 5px;}
+strong{font-size: 22px; line-height: 24px; font-weight: bold;}
+
+.div{border-top: 2px solid black; margin-top: 20px;}
+.div p{text-align: center; margin-top: 190px;}
+
+
