@@ -1,9 +1,187 @@
-/* 이미지 */
-#carouselExampleInterval{
-    width: 700px; height: 350px;
-    margin-left: 45%;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 600px;
 }
 
-button{
-    margin-top: 50%;
+#title{
+    display: block;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
 }
+
+/* 가격 */
+div.num p{
+    margin-top: 10px;
+    display: inline;
+}
+#num01{
+    font-size: 40px;
+    position: relative;
+    color: #ea699d;
+}
+
+#num02{
+    font-size: 40px;
+    float: right;
+}
+#num03{
+    text-decoration: line-through;
+    color: grey;
+    font-size: 30px;
+    float: right;
+    margin-right: 10px;
+}
+
+#sub{
+    background: rgba(220, 220, 220, 0.274);
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    width: 600px; height: 40px;
+}
+#sub strong{
+    color: rgba(2, 170, 2, 0.733);
+}
+
+div.box{
+    margin-top: 30px;
+    border: 1px solid black;
+}
+div.box p:first-child{
+    font-size: 25px;
+    margin: 10px;
+}
+
+div.box p:nth-child(2){
+    font-size: 20px;
+    margin: 10px;
+    display: inline;
+}
+
+div.box p:nth-child(3){
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+    float: right;
+}
+
+.box{
+    width: 100%; height: 230px;
+}
+
+.bb{
+    /* text-align: center; */
+    background: rgba(220, 220, 220, 0.411);
+    border: 1px solid gainsboro;
+    width: 95%; height: 100px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bb div#boxmin em{
+    text-align: left;
+    color: red;
+}
+
+#a{
+    font-size: 15px;
+    color: rgba(128, 128, 128, 0.534);
+}
+
+img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#bor{
+    display: inline;
+}
+
+#span{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 20px; height: 20px;
+    border: 2px solid black;
+}
+#span:hover{
+    cursor:pointer;
+}
+
+#ds{
+    border: 1px solid gainsboro;
+    text-align: left;
+    padding: 10px;
+}
+#s1{
+    color: #ea699d;
+}
+
+.Q p{
+    color: #ea699d;
+}
+
+.subtitle p:first-child{
+    color: gray;
+}
+.subtitle p:last-child{
+    color: #ea699d;
+}
+
+.p3 p{
+    display: inline-block;
+}
+.p3 p:nth-child(2){
+    color: gray;
+    margin-left: 75%;
+}
+.p3 p:nth-child(3){
+    display: block;
+    color: #ea699d;
+    font-size: 20px;
+    float: right;
+}
+
+/* 버튼들 */
+#b1{
+    width: 45%; height: 60px;
+    background-color: #32cd32;
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#b2{
+    width: 45%; height: 60px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+#b3{
+    margin-top: 10px;
+    width: 45%; height: 60px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#b4{
+    margin-top: 10px;
+    width: 45%; height: 60px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
