@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,html{width: 100%;}
+
+            #wrap{
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                border: 1px solid black;
+
+            }
+
+            #wrap div{
+                display: inline-block;
+                margin-right: -6px;
+                padding-top: 10px;
+                
+            }
+
+            /* #wrap div:first-child{ width: 300px; height: 500px; background-color: red;}
+            #wrap div:nth-child(2){width: 300px; height: 500px; background-color: orange;}
+            #wrap div:nth-child(3){ width: 300px;height: 500px; background-color: yellow;}
+            #wrap div:nth-child(4){ width: 300px;height: 500px; background-color: blueviolet;}
+            #wrap div:last-child{width: 300px;height: 500px; background-color: blue;} */
+
+
+            #wrap div .profile{width: 100px; height: 100px; border-radius:100px}
+
+            /* 반응형 웹을 위한 미디어쿼리 적용 */
+            /*320px이상 : smart phone- potrait 모드*/
+            @media all and (min-width:320px){
+                #wrap div{width: 100%;}
+            }
+
+            /* 600px이상 : smart phone-landscape  or  tablet */
+            @media all and (min-width: 600px){
+                #wrap div{width: 50%;}
+                #wrap div:last-child{width: 100%;}
+            }
+
+            /* 800px이상 : desktop monitor */
+            @media all and (min-width: 800px){
+                #wrap div{width: 20%;}
+                #wrap div:last-child{width: 20%;}
+            }
+
+/* .profile{width: 20%; height: 500px; margin: 20px; border: 1px solid cadetblue} */
+
+</style>
+<body id="myPage">
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="./index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">Search</a> -->
+  </div>
+</div>
+
+<!-- Image Header -->
+<center>
+  <div class="w3-display-container w3-animate-opacity" style="padding-top: 50px; padding-left: 30px; padding-right: 30px;">
+    <center>
+      <img src="./image/PC3.jpg" alt="boat" style="width: 100%; ">
+    </center>
+   
+  </div>
+
+</center>
+
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<!-- 라이브러리 카카오 적용 -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66f98a4effed2a4899ada4590c712487"></script>
+<div class="w3-container w3-padding-64 w3-center" id="team">
+
+<h2>OUR TEAM</h2>
+<p>팀장 및 팀원 소개</p>
+
+
+<div id="wrap"> 
+
+  <!-- 전혜인 -->
+  <div style="width: 20; height: 500px;">
+
+    
+    <img src="./image/profilehy.jpg" class="profile">
+    <h3>전혜인</h3>
+    <p>팀장 - 웹 개발&웹 디자인 <br>
+    jhyein1122@naver.com <br>
+    010-3434-4835</p>
+    <div id="mapjeon" style="width: 90%; height: 300px;"></div>
+    
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f6b5bc9f47709d1219a3d342708ac940"></script> -->
+    <script>
+        var mapContainer = document.getElementById('mapjeon'), 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.562612, 127.032387),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+   
+        var markerPosition  = new kakao.maps.LatLng(37.562612, 127.032387); 
+
+        var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    marker.setMap(map);
+
+    </script>
+  </div>
+
+
+
+
+    <!-- 정유진 -->
+
+  <div style="width: 20; height: 500px;">
+
+    <img src="./image/profileyg.jpg" class="profile">
+    <h3>정유진</h3>
+    <p>팀원 - 웹 개발&웹 디자인  <br>
+      dbwl232@naver.com <br>
+      010-3421-6913</p>
+    <div id="mapjeong" style=" width: 90%; height: 300px; "></div>
+
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2d3611dbed65dd7a063a35f450384a69"></script>         -->
+
+    <!-- 실제 지도를 띄우는 코드 -->
+    <script>
+        var container = document.getElementById('mapjeong'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var markerPosition = new kakao.maps.LatLng(33.450701, 126.570667);
+        var marker = new kakao.maps.Marker({position:markerPosition});
+        marker.setMap(map);
+
+    </script>
+
+
+    
+
+
+  </div>
+
+
+  <!-- 임재경 -->
+  <div style="width: 20; height: 500px;">
+
+    <img src="./image/profilejk.jpg" class="profile">
+    <h3>임재경</h3>
+    <p>팀원 - 웹 개발&웹 디자인 <br>
+      worud696947@gmail.com <br>
+      010-2745-6969</p>
+    <div id="maplim" style="width: 90%; height: 300px;"> </div>
+
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66f98a4effed2a4899ada4590c712487"></script> -->
+
+        <script>
+            var container = document.getElementById('maplim'); //지도를 담을 영역의 DOM 레퍼런스
+            var options = { //지도를 생성할 때 필요한 기본 옵션
+                center: new kakao.maps.LatLng(37.537085, 127.085911), // 지도의 중심좌표
+                level: 3 //지도의 레벨(확대, 축소 정도)
+            };
+            var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+            var markerPosition  = new kakao.maps.LatLng(37.537085, 127.085911); 
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            marker.setMap(map);
+        </script>
+
+  </div>
+
+
+  <!-- 공우빈 -->
+  <div style="width: 20; height: 500px;">
+
+    <script src="./map.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF0inO-dSSo8vNmXpYcULzQdf6p4C5xTg&callback=initMap">
+        
+    </script>
+
+    <img src="./image/profileyb.jpg" class="profile">
+    <h3>공우빈</h3>
+    <p>팀원 - 웹 개발&웹 디자인 <br>
+      hmy1219@naver.com <br>
+      010-2936-5393</p>
+    <div id="map" style="width: 90%; height: 300px;"></div>
+
+
+  </div>
+
+
+  <!-- 하우종 -->
+  <div style="width: 20; height: 500px;">
+
+    <img src="./image/profilehu.jpg" class="profile">
+    <h3>하우종</h3>
+    <p>팀원 - 웹 개발&웹 디자인 <br>
+      hog1245@naver.com <br>
+      010-4465-7173</p>
+    <div id="mapha" style=" width: 90%; height: 300px;"></div>
+
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=28efe88d7f45f5594e4bb5bf0568d11d"></script> -->
+    <script>
+        var mapContainer = document.getElementById('mapha'), 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.502941, 126.935654),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+   
+        var markerPosition  = new kakao.maps.LatLng(37.502941, 126.935654); 
+
+        var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    marker.setMap(map);
+
+    </script>
+
+
+
+  </div>
+
+
+
+  
+
+
+</div>
+
+
+
+
+
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>왕십리캠퍼스 : 성동구 왕십리로 303 4층</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Seoul, Korea</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  02-441-6006</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  hongyoung81@daum.net </p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://twitter.com/" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.google.co.kr/" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <!-- <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
