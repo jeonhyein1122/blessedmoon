@@ -10,3 +10,63 @@ div#toplogo{
     background: #fff8f8;
     padding: 22px;
 }
+
+div#delivery{
+    position: relative;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ededed;
+    padding: 12px;
+}
+
+span.blind{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    background-image: url(https://static-resource-smartstore.pstatic.net/smartstore/p/static/20210325140304/img/sprite/svg/spText_svg.svg);
+}
+
+div.arrived{
+    display: table;
+    width: 100%;
+    min-height: 142px;
+    border-bottom: 1px solid #ededed;
+    table-layout: fixed;
+    padding: 0px 0px 0px 82px;
+
+}
+
+div.arriveddetail{
+    display: table-cell;
+    width: 50%;
+    padding-left: 82px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+div.today{
+ 
+    display: inline-block;
+    margin-bottom: 9px;
+    padding: 4px 14px;
+    width: 20px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 13px;
+    vertical-align: top;
+    background-color: var(--color-picker, #fff);
+}
+
+div.arriveddetail2{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+
+}
+
