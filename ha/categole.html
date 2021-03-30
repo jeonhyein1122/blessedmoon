@@ -6,27 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>categole</title>
 
-    <link rel="stylesheet" href="./ha/menu/categole.css">
 </head>
+<style>
+    #cate{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 600px;
+        height: 600px;
+        padding: 5px;
+    }
+
+    #img{
+        margin-top: 50px;
+        margin-left: 50px;
+        padding: 5px;
+        
+    }
+</style>
 <body>
-    <div id="page">
-        <div><button><a href="http://www.naver.com" class="n">N</a></button><a href="http://blessedmoon.html" class="home">홈</a>
-        </div>
+
+    <div id="cate">
+        <img src="./ha/menu/catepicture/cate9.jpg" id="big">
     </div>
 
-    <div id="cateimg">
-        <img src="./ha/menu/catepicture/cate.jpg">
+    <div id="img">
+        <img src="ha/menu/catepicture/cate1.jpg" onmouseover="cate(0)">
+        <img src="ha/menu/catepicture/cate2.jpg" onmouseover="cate(1)">
+        <img src="ha/menu/catepicture/cate3.jpg" onmouseover="cate(2)">
+        <img src="ha/menu/catepicture/cate4.jpg" onmouseover="cate(3)">
+        <img src="ha/menu/catepicture/cate5.jpg" onmouseover="cate(4)">
+        <img src="ha/menu/catepicture/cate6.jpg" onmouseover="cate(5)">
     </div>
 
-    <div id="smaimg">
-        <ul class="imgs">
-            <li><img src="./ha/menu/catepicture/cate1.jpg"></li>
-            <li><img src="./ha/menu/catepicture/cate2.jpg"></li>
-            <li><img src="./ha/menu/catepicture/cate3.jpg"></li>
-            <li><img src="./ha/menu/catepicture/cate4.jpg"></li>
-            <li><img src="./ha/menu/catepicture/cate5.jpg"></li>
-            <li><img src="./ha/menu/catepicture/cate6.jpg"></li>
-        </ul>
-    </div>
+    <script>
+
+        var arr=["cate9.jpg", "cate12.jpg","cate13.jpg","cate14.jpg","cate11.jpg","cate10.jpg"];
+        function cate(x){            
+            document.getElementById("big").src="./ha/menu/catepicture/"+arr[x];
+        }
+
+        
+        
+    </script>
 </body>
 </html>
