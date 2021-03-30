@@ -62,11 +62,46 @@ div.today{
     vertical-align: top;
     background-color: var(--color-picker, #fff);
 }
+div.before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    width: 1px;
+    height: 88px;
+    margin: auto 0;
+    background-color: #ededed;
+    content: '';
+}
 
 div.arriveddetail2{
     display: table-cell;
     width: 50%;
     vertical-align: middle;
-
+    font-size: 12px;
 }
 
+
+
+div.after{
+    border-top: 1px dashed #ececec;
+     display: inline-block; 
+     width: 143px;
+      margin: 6px 14px 0 19px; 
+      vertical-align: top; 
+      content:'';
+}
+
+div.arriveddetail2 ul li span.count{
+    display: inline-block;
+    width: 37px;
+    text-align: right;
+    vertical-align: top;
+}
+
+p.month6{
+    margin-top: 10px;
+    color: #5f5f5f;
+    letter-spacing: -0.5px;
+    line-height: 16px;
+}
