@@ -1,0 +1,12 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body{padding: 10px;}
+
+div#toplogo{
+    color: #222222;
+    font-size: 13px;
+    background: #fff8f8;
+    padding: 22px;
+}
