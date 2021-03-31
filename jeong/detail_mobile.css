@@ -1,0 +1,33 @@
+.Detail{width: 450px; margin-left: 20px;}
+.button li{margin-left: 80px; }
+
+.h{width: 450px;padding-bottom: 0;font-size: 15px;}
+
+.strong{font-size: 12.5px;  width: 450px;}
+ 
+.table{width: 450px;}
+.td1{font-size: 11px;}        
+.td2{font-size: 11px;}
+.td2-2{font-size: 11px}
+.td3{font-size: 11px;}
+.td4{font-size: 11px;}
+
+.table2{width: 450px;}
+
+.box{margin: 20px auto 0; width: 400px; height: 150px;padding: 0;}
+.box h4{font-size: 13px;}
+.box span{font-size:11px;}
+.box span a{color: black;}       
+
+.list{width: 450px;}
+
+ 
+#box2{width: 450px;  margin-top: 130px; height: 160px;}
+#box3{width: 450px; margin:0; display: inline-flex;}
+#center{border:1px solid #ededed; font-size: 11px;  width: 200px; padding: 15px 18px 16px;}
+#center2{border:1px solid #ededed; font-size: 11px;  width: 200px; padding: 15px 18px 16px;}
+.do{border: 1px solid #cfcfcd ; width:60px; height: 13px; padding: 3px 5px;  text-align: center; margin-top: 10px;}
+
+        
+        
+
