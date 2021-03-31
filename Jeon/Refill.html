@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 모바일 반응형 웹 -->
+    <link rel="stylesheet" href="./menu/mobile.css" media="(max-width:600px)">
+    <!-- 테블릿, 데스트탑 -->
+    <link rel="stylesheet" href="./menu/desktop.css" media="(min-width:600px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body id="page">
+    <div class="main">
+        <h2>REFILL</h2>
+    </div>
+
+    <div class="menu">
+        <ul class="men">
+            <li class="btn" onclick="favor()" style="cursor:pointer">인기도순</li> 
+            <li class="btn" onclick="sell()" style="cursor:pointer">누적판매순</li> 
+            <li class="btn" onclick="price()" style="cursor:pointer">낮은가격순</li> 
+            <li class="btn" onclick="upload()" style="cursor:pointer">최신등록순</li> 
+            <li class="btn" onclick="review()" style="cursor:pointer">리뷰많은순</li> 
+            <li class="btn" onclick="rating()" style="cursor:pointer">평점높은순</li>
+        </ul>
+    </div>
+
+    <div id="aa"></div>
+
+    <script>
+    
+
+        function favor(){
+            $.ajax({
+                type:"GET",
+                url:"./menu/favor.html",
+                success:function(data){
+                    $("#aa").html(data);
+                },
+                error:function(e){
+                    $("aa").html(e.responseText);
+                }
+            });
+        }
+
+        function sell(){
+            $.ajax({
+                type:"GET",
+                url:"./menu/sell.html",
+                success:function(data){
+                    $("#aa").html(data);
+                },
+                error:function(e){
+                    $("aa").html(e.responseText);
+                }
+            });
+        }
+
+        function price(){
+            $.ajax({
+                type:"GET",
+                url:"./menu/price.html",
+                success:function(data){
+                    $("#aa").html(data);
+                },
+                error:function(e){
+                    $("aa").html(e.responseText);
+                }
+            });
+        }
+        function upload(){
+            $.ajax({
+                type:"GET",
+                url:"./menu/upload.html",
+                success:function(data){
+                    $("#aa").html(data);
+                },
+                error:function(e){
+                    $("aa").html(e.responseText);
+                }
+            });
+        }
+
+        function review(){
+            $.ajax({
+                type:"GET",
+                url:"./menu/review.html",
+                success:function(data){
+                    $("#aa").html(data);
+                },
+                error:function(e){
+                    $("aa").html(e.responseText);
+                }
+            });
+        }
+
+        function rating(){
+            $.ajax({
+                type:"GET",
+                url:"./menu/rating.html",
+                success:function(data){
+                    $("#aa").html(data);
+                },
+                error:function(e){
+                    $("aa").html(e.responseText);
+                }
+            });
+        }
+
+       
+
+    </script>
+    
+    <footer>
+
+    </footer>
+
+</body>
+</html>
