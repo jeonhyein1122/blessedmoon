@@ -71,6 +71,19 @@
 
 /* 상품 8개  */
 #inmain #product8{width: 100; height: 730px;}
+#wrap2 div{
+    width: 200px;
+    display: inline-block;
+    margin: 0px 23px;
+    margin-left: 40px;
+}
+
+#wrap2 div img{width: 230px; height: 230px;}
+.bord2{text-decoration: none; color: black; float: left; font-size: medium; width: 100%; font-weight: bold;}
+.bordprice2{text-decoration: none; color: black;  float: left; font-size: medium; font-weight: bold;}
+
+.gray2{text-decoration: none; color: #888888;  float: left; font-size: small;}
+.grayprice2{text-decoration: none; color: #888888;  float: left; font-size: small; padding-top: 5px;}
 
 
 
