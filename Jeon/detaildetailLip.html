@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./menu/detaildetail.css" media="(min-width:600px)">
+    
+    <link rel="stylesheet" href="../Kong/CSS/Details.css"> 
+    <script src="../Kong/JS/Details.js"></script>
+  
+
+    <style>
+        #cate{
+            width: 90%;
+            height: 600px;
+            text-align: center;
+            margin-right: 10px;
+            padding-right: 10px;
+            
+        }
+    
+        #imgha{ 
+            text-align: center;  
+            width: 70%;
+            height: 50px;
+            margin-left: 10px;
+            padding-left: 10px;
+                   
+        }
+
+        #imgha div ul li{ width: 50px; height: 50px; display: inline-block; }
+       
+    </style>
+
+</head>
+
+<body id="page">
+
+
+    <div style="  width: 100%; height: 600px;  display: inline-block; margin-bottom: 600px;">
+        <!-- background-color: burlywood; -->
+        <!-- background-color: cornflowerblue; -->
+
+        <div style=" width: 50%; height: 300px;  float: left; " >
+
+
+            <div id="cate">
+                <img src="../ha/menu/catepicture/cate9.jpg" id="big">
+            </div>
+        
+            <div id="imgha">
+
+                <div>
+
+                    <ul>
+                        <li><img src="../ha/menu/catepicture/cate1.jpg" onmouseover="cate(0)"></li>
+                        <li><img src="../ha/menu/catepicture/cate2.jpg" onmouseover="cate(1)"></li>
+                        <li><img src="../ha/menu/catepicture/cate3.jpg" onmouseover="cate(2)"></li>
+                        <li><img src="../ha/menu/catepicture/cate4.jpg" onmouseover="cate(3)"></li>
+                        <li><img src="../ha/menu/catepicture/cate5.jpg" onmouseover="cate(4)"></li>
+                        <li><img src="../ha/menu/catepicture/cate6.jpg" onmouseover="cate(5)"></li>
+                    </ul>
+                
+                </div>
+                
+            </div>
+
+            <script>
+
+                var arr=["cate9.jpg", "cate12.jpg","cate13.jpg","cate14.jpg","cate11.jpg","cate10.jpg"];
+                function cate(x){            
+                    document.getElementById("big").src="../ha/menu/catepicture/"+arr[x];
+                }
+        
+            </script>
+
+            
+            
+        </div>
+
+        <div style=" width: 50%; height: 500px;  float: right; margin-top: 20x;">
+
+            
+                <div id="title" style="font-size: 16px;">
+                    <p> <strong>블레스문 플러피 립 틴트 02무드인디고</strong> </p>
+                </div>
+        
+                <div class="num">
+                    <p id="num01">59%</p>
+                    <p id="num02"><strong>28,000원</strong></p>
+                    <p id="num03">11,300</p>
+                </div>
+        
+                <div id="sub">
+                    <p> <strong>롯데카드 간편결제시 5% 청구할인</strong>(최대 2천원)</p>
+                </div>
+        
+                <div class="box">
+                    <p> <strong>블레스문 스토어 고객을 위한 혜택</strong> </p>
+                    <p> <strong> 최대 적립 포인트</strong></p>
+                    <p> <strong> 1,179원</strong></p>
+        
+                    <div class="bb">
+                        <div id="boxmin">
+                            <em>TIP.</em>
+                            <p style="margin-top: 5px;"> <strong>포인트 더 받는 방법</strong> </p>
+                            <p> <strong>+최대 2,058원</strong></p>
+                        </div>
+        
+                        <div style="margin-left: 10px; margin-right: 10px;">
+                            <div style="display: table; display: block; margin-top: 20px;">
+                                <a id="a" href="https://nid.naver.com/membership/join?rurl=https%3A%2F%2Fsmartstore.naver.com%2Fmembership%2Fbridge" target="_blank">최대 5% 적립, 무료시작</a>
+                                <strong style="float: right;">1,372원</strong>
+                            </div>
+        
+                            <div style="display: table; display: block;">
+                                <a id="a"  href="https://campaign.naver.com/event/pointpay"  target="_blank">충전포인트로 결제시</a>
+                                <strong style="float: right;">686원</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div>
+                    <a href="https://campaign.naver.com/memday2103/?fr=ss&rurl=https%3A%2F%2Fsmartstore.naver.com%2Fmembership%2Fbridge">
+                    <img src="../Kong/Img/EC8381EC84B8EB9DA0EBB0B0EB8488_1 (1).png" alt="dd" onclick="img()">
+                    </a>
+                </div>
+        
+                <div>
+                    <p id="bor">무이자할부 | 카드 자세히 보기</p>
+                    <p id="span" onclick="al()"> ? </p> 
+                </div>
+        
+                <div style="border-top: 1px solid gainsboro; margin: 15px 0;"></div>
+        
+                <div id="ds">
+                    <p> <strong>오늘출발 상품</strong> </p>
+                    <p> <strong id="s1">오늘 10:00 까지 결제시</strong> 오늘 바로 발송됩니다. </p>
+                </div>
+        
+                <div class="Q">
+                    <p>
+                        택배배송 | <strong>3,000</strong>원 <em>(주문시 결제)</em>
+                    </p>
+                </div>
+        
+                <div class="subtitle">
+                    <p>50,000 원 이상 구매 시 무료 / 제주 추가3,000원, 제주 외 도서 지역 추가 5,000원</p>
+                    <a href="https://smartstore.naver.com/blessedmoon_cosmetics/bundle/39028545?prevProdId=5006093636"><p>배송비 절약상품 보기 ▷</p></a>
+                </div>
+        
+                <div style="border-top: 1px solid gainsboro; margin: 15px 0;"></div>
+        
+               
+        
+                <div class="p3" style="padding: 10px;">
+                    <p><strong>총 상품 금액</strong></p>
+                    <p> 총 수량 0개</p>
+                    <p>0원</p>
+                </div>
+        
+                <div style="display: flex; justify-content: center;">
+                    <button id="b1" onclick="bts1()">구매하기</button>
+                    <button id="b2" onclick="bts()">톡톡문의</button>
+                </div>
+                
+                <div  style="display: flex; justify-content: center;">
+                    <button id="b3" onclick="bts3()">장바구니</button>
+                    <button id="b4" onclick="bts4()">찜하기</button>
+                </div>
+    
+
+        </div>
+
+        
+       
+
+
+    </div>
+    
+    
+
+
+    <div class="Detail" >
+        <ul class="button">
+            <li><a href="../Jeon/detaildetail.html">상세정보</a></li>
+            <li><a href="../jeong/Detail.html">반품/교환정보</a></li>
+        </ul>
+    </div>
+    <div id="toplogo">
+        <strong class="red">
+            ! 직거래 유도 주의 안내</strong><br>
+            <strong>스마트스토어를 통해 톡톡/상품문의 등을 활용하여 <span style="background-color: #fff4ac; position: relative;"> 
+            현금결제를 유도하는 경우 사기의 가능성이 있으니 절대 결제하지 마시고 </span>
+           <a href="https://pay.naver.com/notice/view?noticeHeader=SAFETY_TRADE&id=200013963" target="blank" style="color:#811515; text-decoration: underline;">네이버페이 고객센터로 문의 주시기 바랍니다.</a> </strong>
+    </div>
+
+    <div style="display: block; margin: 0 auto 28px;">
+    <div id="delivery">
+        <strong style="display: inline-block; font-size: 13px; color: #333333; vertical-align: top;" >
+         배송기간</strong>
+        <span class="seoul">서울 경기 기준</span>
+        <p style="position: absolute; top: 1px; right: 1px; color: #888888; font-size: 12px;" >빅데이터 분석으로 예측한
+            <span style="font-weight: bold; color: #444444;">배송 시뮬레이터</span>
+            <span class="blind" >beta</span>
+        </p>
+    </div>
+
+    <div class="arrived"  >
+        <div class="arriveddetail" >
+            <strong class="today" style=" background-color: #7f7e87 !important;  font-size: 12px;">오늘출발 10:00 마감</strong>
+            <p style="color: #333333; font-size: 22px; font-weight: bold;letter-spacing: -0.34px; margin: 0;">4/1(목) 도착확률
+            <span style="color: #ea699d;">86%</span></p>
+            <p><strong style="color: #777777; margin: 5px; line-height: 18px; font-size: 12px; margin: 0;">지금 주문시 내일 3/31(수)</strong>에 발송됩니다.
+            </p>
+
+        </div>
+
+        <div class="before"></div>
+        <div class="arriveddetail2" >
+            <ul style="position: relative; padding: 33px 0 30px 72px; font-size: 12px;">
+
+            <li style="color: #ea699d; "> <span>4/1(목)까지 도착 확률</span>
+                <div class="after" ></div>
+                 <span class="count" style="font-weight: bold;">86%</span></li>
+
+            <li style="margin-top: 17px;"> <span>4/2(금)까지 도착 확률</span>
+                <div class="after" ></div>
+                 <span class="count">94%</span></li>
+
+            <li style="margin-top: 17px;"> <span>4/3(토)까지 도착 확률</span>
+                <div class="after" ></div>
+                <span class="count">97%</span></li>
+          </ul>
+        </div>
+
+    </div>
+    <p class="month6">
+        최근 6개월의 배송 데이터 분석으로 예측한 이 상품의 배송완료 예상률입니다. 스토어 및 택배사의 사정에 따라 실제 배송완료일은 예측치와는 다를 수 있습니다.
+    </p>
+</div>
+
+    <div style="display: block;">
+        <div style="margin-top: 30px; margin-bottom: 40px;">
+        <Strong style="font-weight: bold; display: block; line-height: 18px; color: #333; margin-bottom: 14px;">상품정보</Strong>
+       
+        
+        <div>
+            <table class="table1" style="border: solid #ededed; border-width: 1px 0; color: #6e6e6e; border-collapse: collapse;">
+                <caption style="position: relative; display: table-caption; ">
+                    <span class="blind"></span>
+                </caption>
+                <colgroup>
+                <col width="160" style="display: table-column;">
+                <col>
+                <col width="160">
+                <col>
+            </colgroup>
+            <tbody style="display: table-row-group; vertical-align: middle; border-top: inherit;">
+                <tr style="display: table-row;">
+                    <th scope="row" class="thscope">상품번호</th>
+                    <td colspan="1" class="tdcolspan" >
+                        <strong>5006093636</strong></td>
+                    <th scope="row" class="thscope">상품상태</th>
+                    <td colspan="1" class="tdcolspan">신상품</td>
+                </tr>
+                <tr style="display: table-row;">
+                    <th scope="row" class="thscope">제조사</th>
+                    <td colspan="1" class="tdcolspan" >
+                        코디</td>
+                    <th scope="row" class="thscope">브랜드</th>
+                    <td colspan="1" class="tdcolspan">블레스문</td>
+                </tr>
+                <tr style="display: table-row;">
+                    <th scope="row" class="thscope">원산지</th>
+                    <td colspan="1" class="tdcolspan" >
+                        국산(경기도 화성시)</td>
+                    <th scope="row" class="thscope">제조일자</th>
+                    <td colspan="1" class="tdcolspan">2020.04.23</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <!-- Q&A주소 링크걸기 -->
+        <p style="margin-top: 10px;"> ⅰ 상품정보 관련 문의사항은 <a href="" style="border-bottom: 1px solid #000; color: 000;">Q&A</a> 에 남겨주세요.</p>
+
+
+        <div style="margin-top: 14px; margin-bottom: 15px;">
+            <div>
+                <table class="table1" style="border: solid #ededed; border-width: 1px 0; color: #6e6e6e; border-collapse: collapse;">
+                    <caption style="position: relative; display: table-caption; ">
+                        <span class="blind"></span>
+                    </caption>
+                    <colgroup>
+                    <col width="160" style="display: table-column;">
+                    <col>
+                    <col width="160">
+                    <col>
+                    </colgroup>
+                    <tbody style="display: table-row-group; vertical-align: middle; border-top: inherit;">
+                    <tr style="display: table-row;">
+                        <th scope="row" class="thscope">세부제품특징</th>
+                        <td colspan="1" class="tdcolspan" >
+                           펄있음,은은함,눈매연출</td>
+                        <th scope="row" class="thscope">색상</th>
+                        <td colspan="1" class="tdcolspan">핑크,코랄,피치</td>
+                    </tr>
+                    <tr style="display: table-row;">
+                        <th scope="row" class="thscope">주요제품특징</th>
+                        <td colspan="3" class="tdcolspan" >
+                            부드러운 발림</td>
+                        
+                    </tr>
+                    </tbody>
+                    </table>
+                 </div>
+        </div>
+
+    
+            <div style="margin-top: 15px;">
+                <table class="table1" style="border: solid #ededed; border-width: 1px 0; color: #6e6e6e; border-collapse: collapse;">
+                    <caption style="position: relative; display: table-caption; ">
+                        <span class="blind">상품정보</span>
+                    </caption>
+                    <colgroup>
+                    <col width="160" style="display: table-column;">
+                    <col>
+                </colgroup>
+                <tbody style="display: table-row-group; vertical-align: middle; border-top: inherit;">
+                    <tr style="display: table-row;">
+                        <th scope="row" class="thscope">영수증발급</th>
+                        <td colspan="3" class="tdcolspan" >
+                           신용카드전표, 현금영수증발급</td>
+                    </tr>
+                    <tr style="display: table-row;">
+                        <th scope="row" class="thscope">A/S 안내</th>
+                        <td colspan="3" class="tdcolspan" >
+                            0518314106 <br> 상세페이지 참조</td>
+                        
+                    </tr>
+                    </tbody>
+                    </table>
+                    
+                </div>
+       
+             
+            </div>
+    </div>
+
+    <div style="margin-top: 60px; margin-bottom: 80px; display: block;">
+        <p style="font-size: 20px; line-height: 29px; letter-spacing: -1; color: #444444; text-align: center;">
+            쇼핑 꿀팁 받으세요! <br> 스토어를 <strong>찜!</strong>하면 쿠폰이<strong> 쏙!!!</strong> <br>혜택 받아서 꼭 쓰세요!</p>
+    </div>
+
+    <img src="./imagedetaildetail/1.jpg" class="img" onclick="alert('로그인이 필요한 서비스 입니다.')" style="width: 400px; height: 300px;">
+    <img src="./imagedetaildetail/2.jpg" class="img" >
+    <img src="./imagedetaildetail/3.jpg" class="img" >
+    <img src="./imagedetaildetail/4.jpg" class="img" >
+    <img src="./imagedetaildetail/5.jpg" class="img" >
+    <img src="./imagedetaildetail/6.gif" class="img" >
+    <img src="./imagedetaildetail/7.jpg" class="img" >
+    <img src="./imagedetaildetail/8.jpg" class="img" >
+    <img src="./imagedetaildetail/9.jpg" class="img" >
+    <img src="./imagedetaildetail/10.png" class="img" >
+    
+    
+    
+
+
+</body>
+</html>
